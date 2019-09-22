@@ -53,7 +53,7 @@ class Notifier():
         message += Command.End
 
         # print('command: %s' % message)
-        self._sock.sendall(message)
+        self._sock.send(message)
 
         # for command in commands:
         #   self._sock.sendall(command)
